@@ -1,0 +1,175 @@
+body {
+	font: 18px/1.5 Arial, helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+/* Global */
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+.button {
+	border: none;
+	background-color: #f37831;
+	padding: 8px;
+}
+/* Header */
+header {
+	background-color: #02426d;
+	color: #ffffff;
+	padding: 0px;
+	border-bottom: 3px solid #ffa500;
+	min-height: 70px;
+	margin: 0;
+}
+header ul {
+	padding: 0;
+	margin: 0;
+}
+header a {
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: capitalize;
+	font-size: 20px;
+}
+header li {
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+.branding {
+	float: left;
+	margin: 0;
+}
+header nav {
+	float: right;
+	margin-top: 35px;
+}
+header .highlight,
+header .current a {
+	color: #df5f15;
+}
+/* Showcase */
+.showcase {
+	min-height: 400px;
+	background: url('/img/web-development-vpn.jpg') no-repeat 0 -10px;
+	text-align: center;
+	color: #fcfcfce1;
+}
+.showcase h1 {
+	font-size: 50px;
+}
+.showcase p {
+	font-size: 23px;
+}
+.newsletter {
+	background-color: #02426d;
+}
+.newsletter h4 {
+	float: left;
+	color: #ffffff;
+	font-size: 22px;
+	margin: 15px;
+}
+.newsletter .email {
+	float: right;
+	margin-top: 20px;
+}
+.newsletter input[type="email"] {
+	width: 250px;
+	padding: 5px;
+}
+.images {
+	margin-top: 20px;
+}
+.images .box {
+	float: left;
+	width: 30%;
+	padding: 10px;
+	text-align: center;
+	font-size: .8em;
+}
+.images .box .box1 {
+	margin-top: 40px;
+}
+.images .box img {
+	width: 40%;
+}
+/* Sidebar */
+article .sidebar {
+	float: right;
+	width: 30%;
+	margin-top: 20px;
+	font-size: medium;
+}
+article .dark {
+	background-color: #3b3a3a;
+	color: #ffffff;
+	padding: 15px;
+	/* margin: ; */
+}
+article .main {
+	float: left;
+	width: 65%;
+	font-size: medium;
+}
+article .main h5 {
+	font-size: 25px;
+	text-align: center;
+	margin: auto;
+	padding-top: 25px;
+}
+/* Service */
+article .main li {
+	list-style: none;
+	padding: 10px;
+	border: #a09d9dee solid 2px;
+	margin-bottom: 5px;
+	background-color: #e6e6e6;
+}
+aside .quote input,
+aside .quote textarea {
+	width: 90%;
+	padding: 5px;
+}
+aside .dark h4 {
+	font-size: 20px;
+	margin: 10px;
+	text-align: left;
+	margin-left: 0px;
+}
+footer {
+	text-align: center;
+	background-color: #02426d;
+	color: beige;
+}
+/* Media Queries */
+@media (max-width: 862px) {
+	.branding,
+	header nav,
+	.newsletter h4,
+	.newsletter .email,
+	.images .box,
+	article .sidebar,
+	article .main {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	header nav {
+		margin-bottom: 10px;
+	}
+	.newsletter .email {
+		margin-bottom: 10px;
+	}
+	/* * }
+	aside .sidebar h4 {
+		text-align: center;
+	} */
+	aside .dark h4 {
+		text-align: center;
+	}
+	.button {
+		width: 20%;
+	}
+}
